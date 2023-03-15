@@ -10,7 +10,9 @@ const Container = styled.div`
 
 const Wrapper = styled.div`
     width: 25%;
-    justify-content: center;
+    margin: 0 auto;
+    justify-content:center
+    width: 30%;
     padding: 20px;
     background-color: lightgrey;
   ${mobile({ width: "90vw" })}

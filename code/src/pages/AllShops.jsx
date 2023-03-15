@@ -1,22 +1,18 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom";
+import Shope from "../components/Shope";
 
 const Container = styled.div`
   flex: 1;
   margin: 3px;
   height: 70vh;
-  background-color: white;
+  background-color: lightgrey;
   justify-content: space-between;
   align-items: center;
   position: relative;
   border-radius: 25px;
   ${mobile({ height: "50vh" })};
-
-  &:hover {
-    background: lightgrey;
-    color: white;
-  }
 `;
 
 const Image = styled.img`
@@ -24,7 +20,7 @@ const Image = styled.img`
   height: 80%;
   align-items: center;
   object-fit: cover;
-  ${mobile({ height: "35vh" })};
+  ${mobile({ height: "40vh" })};
 `;
 
 const Info = styled.div`
@@ -82,4 +78,5 @@ const ShopCards = ({ item }) => {
   );
 };
 
-export default ShopCards;
+export default AllShops;
+

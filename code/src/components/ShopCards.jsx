@@ -24,7 +24,7 @@ const Image = styled.img`
   height: 80%;
   align-items: center;
   object-fit: cover;
-  ${mobile({ height: "35vh" })};
+  ${mobile({ height: "40vh" })};
 `;
 
 const Info = styled.div`

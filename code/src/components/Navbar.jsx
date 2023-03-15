@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 const Container = styled.div`
   height: 60px;
   background-color: black;
+  ${mobile({ height: "60px" })}
 `;
 
 const Wrapper = styled.div`
@@ -19,7 +20,7 @@ const Wrapper = styled.div`
   ${mobile({ padding: "10px 0px" })}
 `;
 const Left = styled.div`
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
   padding-bottom: 10px;
@@ -43,22 +44,21 @@ const SearchContainer = styled.div`
 `;
 const Input = styled.input`
   border: none;
-  ${mobile({ width: "30px" })}
+  ${mobile({ width: "50px" })}
 `;
 const Center = styled.div`
   flex: 1;
   text-align: center;
   align-items: center;
-  ${mobile({ justifyContent: "center" })}
 `;
 
 const Right = styled.div`
-  flex: 1;
+  flex: 2;
   display: flex;
   align-items: center;
   justify-content: flex-end;
   color: white;
-  ${mobile({ flex: 2, justifyContent: "center" })}
+  ${mobile({ justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
@@ -66,7 +66,7 @@ const MenuItem = styled.div`
   cursor: pointer;
   margin-left: 25px;
   color: white;
-  ${mobile({ fontsize: "12px", marginLeft:"10px" })}
+  ${mobile({ fontSize: "12px", marginLeft: "10px" })}
 `;
 
 const Navbar = () => {
