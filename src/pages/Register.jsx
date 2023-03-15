@@ -1,21 +1,22 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Container = styled.div`
-  margin: 0 auto;
+  align-items: center;
   justify-content: center;
 `;
 
 const Wrapper = styled.div`
-      width: 30%;
-      margin:0 auto;
-      justify-content:center
-      width: 40%;
-      padding: 20px;
-      background-color: lightgrey;
-  ${mobile({ width: "90vw" })}
+  width: 30%;
+  align-items: center;
+  padding: 20px;
+  justify-content: center;
+  background-color: lightgrey;
+  ${mobile({ width: "80%" })}
+  ${mobile1({ width: "100%" })}
 `;
 
 const Title = styled.h1`
@@ -25,7 +26,7 @@ const Title = styled.h1`
 
 const Form = styled.form`
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 `;
 
 const Input = styled.input`
@@ -36,7 +37,7 @@ const Input = styled.input`
 `;
 
 const Agreement = styled.span`
-  font-isze: 12px;
+  font-size: 12px;
   margin: 20px 0px;
 `;
 
@@ -47,7 +48,7 @@ const Button = styled.button`
   background-color: teal;
   color: white;
   cursor: pointer;
-  border-radius: 25px;
+  border-radius: 10px;
 
   &hover: bakcground-color: black;
 `;
@@ -58,7 +59,6 @@ const Register = () => {
     <Container>
       <Navbar />
       <Wrapper>
-        
         <Title>CREATE AN ACCOUNT</Title>
         <Form>
           <Input placeholder="mobile or username" />

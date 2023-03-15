@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -12,6 +13,7 @@ const Container = styled.div`
   position: relative;
   border-radius: 25px;
   ${mobile({ height: "50vh" })};
+  ${mobile1({ height: "50vh" })};
 
   &:hover {
     background: lightgrey;
@@ -25,6 +27,7 @@ const Image = styled.img`
   align-items: center;
   object-fit: cover;
   ${mobile({ height: "35vh" })};
+  ${mobile1({ height: "35vh" })};
 `;
 
 const Info = styled.div`
@@ -35,6 +38,7 @@ const Info = styled.div`
   height: 20%;
   color: black;
   ${mobile({ color: "white", padding: "0px 20px" })};
+  ${mobile1({ color: "white", padding: "0px 20px" })};
 `;
 
 const Title = styled.h1`
@@ -42,6 +46,7 @@ const Title = styled.h1`
   font-weight: 600;
   font-size: 24px;
   ${mobile({ fontSize: "14px", padding: "0px 10px" })};
+  ${mobile1({ fontSize: "14px", padding: "0px 10px" })};
 `;
 
 const Area = styled.p`
@@ -49,6 +54,7 @@ const Area = styled.p`
   font-weight: 500;
   font-size: 14px;
   ${mobile({ fontSize: "12px", padding: "0px 10px" })};
+  ${mobile1({ fontSize: "12px", padding: "0px 10px" })};
 `;
 const Button = styled.button`
     font-family: inherit;

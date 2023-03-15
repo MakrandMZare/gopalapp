@@ -1,4 +1,5 @@
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 import styled from "styled-components";
 
 const Container = styled.div`
@@ -11,6 +12,7 @@ const Container = styled.div`
     position: relative;
     border-radius: 25px;
     ${mobile({ width: "90%" })}
+    ${mobile1({ width: "90%" })}
 `;
 
 const Image = styled.img`

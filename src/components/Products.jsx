@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { product } from "../data";
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 import Product from "./Product";
 
 const Container = styled.div`
@@ -10,6 +11,7 @@ const Container = styled.div`
       flex-wrap: wrap;
       justify-content: space-between;
       ${mobile({ marginTop: "10px", alignContent: "center" })}
+      ${mobile1({ marginTop: "10px", alignContent: "center" })}
 `;
 
 const Products = () => {

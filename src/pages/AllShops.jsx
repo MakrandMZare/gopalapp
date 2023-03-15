@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
 import { Link } from "react-router-dom";
-import Shope from "../components/Shope";
+import Shope from "../components/AllShops";
 
 const Container = styled.div`
   flex: 1;
@@ -63,7 +63,7 @@ const Button = styled.button`
 }
 `;
 
-const ShopCards = ({ item }) => {
+const AllShops = ({ item }) => {
   return (
     <Container>
       <Link to={`/shops/${item.title}`}>

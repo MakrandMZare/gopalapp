@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 
 const Container = styled.div``;
 
@@ -10,6 +11,7 @@ const Wrapper = styled.div`
   padding: 50px;
   display: flex;
   ${mobile({ padding: "10px", flexDirection: "column" })}
+  ${mobile1({ padding: "10px", flexDirection: "column" })}
 `;
 
 const ImgContainer = styled.div`
@@ -46,6 +48,7 @@ const FilterContainer = styled.div`
   margin: 30px 0px;
   justify-content: space-between;
   ${mobile({ width: "100%" })}
+  ${mobile1({ width: "100%" })}
 `;
 
 const Filter = styled.div`
@@ -76,6 +79,7 @@ const AddContainer = styled.div`
   align-items: center;
   justify-content: space-between;
   ${mobile({ width: "100%" })}
+  ${mobile1({ width: "100%" })}
 `;
 
 const AmountContainer = styled.div`

@@ -4,6 +4,7 @@ import Logo from "../components/logo/logo192.png";
 import { Badge } from "@material-ui/core";
 import { ShoppingCartOutlined, Search } from "@material-ui/icons";
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`
@@ -17,6 +18,7 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-between;
   ${mobile({ padding: "10px 0px" })}
+  ${mobile1({ padding: "10px 0px" })}
 `;
 const Left = styled.div`
   flex: 1;
@@ -29,6 +31,7 @@ const Language = styled.span`
   font-size: 14px;
   cursor: pointer;
   ${mobile({ display: "none" })}
+  ${mobile1({ display: "none" })}
 `;
 
 const SearchContainer = styled.div`
@@ -40,16 +43,19 @@ const SearchContainer = styled.div`
   padding: 5px;
   bakcground-color: lightgray;
   ${mobile({ marginLeft: "20px" })}
+  ${mobile1({ marginLeft: "20px" })}
 `;
 const Input = styled.input`
   border: none;
   ${mobile({ width: "30px" })}
+  ${mobile1({ width: "30px" })}
 `;
 const Center = styled.div`
   flex: 1;
   text-align: center;
   align-items: center;
   ${mobile({ justifyContent: "center" })}
+  ${mobile1({ justifyContent: "center" })}
 `;
 
 const Right = styled.div`
@@ -59,6 +65,7 @@ const Right = styled.div`
   justify-content: flex-end;
   color: white;
   ${mobile({ flex: 2, justifyContent: "center" })}
+  ${mobile1({ flex: 2, justifyContent: "center" })}
 `;
 
 const MenuItem = styled.div`
@@ -67,6 +74,7 @@ const MenuItem = styled.div`
   margin-left: 25px;
   color: white;
   ${mobile({ fontsize: "12px", marginLeft:"10px" })}
+  ${mobile1({ fontsize: "12px", marginLeft:"10px" })}
 `;
 
 const Navbar = () => {

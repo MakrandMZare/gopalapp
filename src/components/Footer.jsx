@@ -9,12 +9,14 @@ import {
   Twitter,
 } from "@material-ui/icons";
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 import styled from "styled-components";
 import Logo from "../components/logo/logo192.png";
 
 const Container = styled.div`
   display: flex;
   ${mobile({ flexDirection: "column" })};
+  ${mobile1({ flexDirection: "column" })};
 `;
 
 const Left = styled.div`
@@ -49,6 +51,7 @@ const Center = styled.div`
   flex: 1;
   padding: 20px;
   ${mobile({ display: "none" })};
+  ${mobile1({ display: "none" })};
 `;
 
 const Title = styled.h3`
@@ -73,6 +76,7 @@ const Right = styled.div`
   flex: 1;
   padding: 20px;
   ${mobile({ backgroundColor: "#eee" })}
+  ${mobile1({ backgroundColor: "#eee" })}
 `;
 
 const ContactItem = styled.div`

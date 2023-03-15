@@ -1,4 +1,5 @@
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
@@ -15,6 +16,7 @@ const Container = styled.div`
     transition: all 0.5s ease;
     cursor: pointer;
     ${mobile({ width: "100%" })}
+    ${mobile1({ width: "100%" })}
 
     &:hover {
       background: lightgrey;
@@ -45,6 +47,7 @@ const Title = styled.h1`
   font-size: 18px;
   font-weight: 600;
   ${mobile({ padding: "0px 20px" })}
+  ${mobile1({ padding: "0px 20px" })}
 `;
 
 const Desc = styled.div`
@@ -52,6 +55,7 @@ const Desc = styled.div`
   font-size: 14px;
   padding: 0 15px;
   ${mobile({ padding: "0px 20px" })}
+  ${mobile1({ padding: "0px 20px" })}
 `;
 
 const Button = styled.button`
@@ -68,6 +72,7 @@ const Button = styled.button`
     color: white;
   }
   ${mobile({ margin: "-250px 0 -150px 250px" })}
+  ${mobile1({ margin: "-250px 0 -150px 250px" })}
 `;
 
 const Cost = styled.div`
@@ -75,6 +80,7 @@ const Cost = styled.div`
   font-weight: 600;
   padding: 0 15px;
   ${mobile({ padding: "0px 20px" })}
+  ${mobile1({ padding: "0px 20px" })}
 `;
 
 const Product = ({ item }) => {

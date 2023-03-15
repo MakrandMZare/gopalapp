@@ -1,19 +1,21 @@
 import styled from "styled-components";
 import { mobile } from "../responsive";
+import { mobile1 } from "../responsive";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 const Container = styled.div`
-    margin: 0 auto;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Wrapper = styled.div`
     width: 25%;
-    justify-content: center;
     padding: 20px;
+    justify-content: center;
     background-color: lightgrey;
-  ${mobile({ width: "90vw" })}
+  ${mobile({ width: "100%" })}
+  ${mobile1({ width: "100%" })}
 `;
 
 const Title = styled.h1`
@@ -38,11 +40,10 @@ const Button = styled.button`
   border: none;
   padding: 15px 20px;
   background-color: teal;
-  font-size: 12px;
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
-  border-radius: 25px;
+  border-radius: 10px;
 `;
 
 const Link = styled.a`
