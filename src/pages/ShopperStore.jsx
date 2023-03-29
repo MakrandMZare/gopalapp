@@ -2,8 +2,10 @@ import styled from "styled-components";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import Shope from "../components/Shope";
+import { allShops } from "../data";
 
 const Container = styled.div``;
+
 const Title = styled.h1`
   margin: 20px;
 `;
@@ -18,9 +20,11 @@ const ShopperStore = () => {
   return (
     <Container>
       <Navbar />
-      <Title>Our Stores</Title>
+      <Title>All Stores</Title>
       <Wrapper>
-        <Shope />
+      {allShops.map((title) => (
+        <Shope item={title} />
+      ))}
       </Wrapper>
       <Footer />
     </Container>

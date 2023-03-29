@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { shops } from "../data";
+import { allShops } from "../data";
 import ShopCards from "./ShopCards";
 import { mobile } from "../responsive";
 import { mobile1 } from "../responsive";
@@ -16,8 +16,8 @@ const Container = styled.div`
 function Shope() {
   return (
     <Container>
-      {shops.map((item) => (
-        <ShopCards item={item} />
+      {allShops.map((title) => (
+        <ShopCards item={title} />
       ))}
     </Container>
   );

@@ -54,7 +54,7 @@ const ImgContainer = styled.div`
 
 const Image = styled.img`
   width: 80%;
-  padding: 30px;
+  padding: 50px;
   align-items: center;
 `;
 
