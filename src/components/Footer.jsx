@@ -14,15 +14,14 @@ import styled from "styled-components";
 import Logo from "../components/logo/logo192.png";
 
 const Container = styled.div`
-  display: flex;
+  display: absolute;
   ${mobile({ flexDirection: "column" })};
   ${mobile1({ flexDirection: "column" })};
 `;
 
 const Left = styled.div`
+  display: relative;
   flex: 1;
-  display: flex;
-  flex-direction: column;
   padding: 20px;
 `;
 
@@ -48,6 +47,7 @@ const SocialIcon = styled.div`
 `;
 
 const Center = styled.div`
+  display: relative;
   flex: 1;
   padding: 20px;
   ${mobile({ display: "none" })};
@@ -73,6 +73,7 @@ const ListItem = styled.li`
 `;
 
 const Right = styled.div`
+  display: relative;
   flex: 1;
   padding: 20px;
   ${mobile({ backgroundColor: "#eee" })}
@@ -127,11 +128,11 @@ const Footer = () => {
         <Title>Contact</Title>
         <ContactItem>
           <Room style={{ marginRight: "10px" }} />
-          35, Kalptaru Society, Ahmedabad 380052
+          Ahmedabad, Gujarat, 382424. India
         </ContactItem>
         <ContactItem>
           <Phone style={{ marginRight: "10px" }} />
-          +91 99999 77777
+          +91 70454 29275
         </ContactItem>
         <ContactItem>
           <MailOutline style={{ marginRight: "10px" }} />

@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- AMP Analytics -->
+    <script
+      async
+      custom-element="amp-analytics"
+      src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+    ></script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
@@ -8,13 +15,16 @@
       name="description"
       content="Web site created using create-react-app"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <style>
       * {
         margin: 0;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
       }
     </style>
     <title>Memories</title>
@@ -22,7 +32,7 @@
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    
+
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -35,6 +45,12 @@
     <title>React App</title>
   </head>
   <body>
+    <!-- Google Tag Manager -->
+    <amp-analytics
+      config="https://www.googletagmanager.com/amp.json?id=GTM-57BQLXHR&gtm.url=SOURCE_URL"
+      data-credentials="include"
+    ></amp-analytics>
+
     <noscript>Gopal Studio : Makrand - gopal@gopalstudio.in </noscript>
     <div id="root"></div>
     <!--
