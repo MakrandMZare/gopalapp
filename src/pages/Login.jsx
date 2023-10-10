@@ -4,14 +4,17 @@ import { mobile1 } from "../responsive";
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
+
 const Container = styled.div`
-  align-items: center;
-  justify-content: center;
+  display: absolute;
+  align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+  flex: 6;  
 `;
 
 const Wrapper = styled.div`
-    width: 25%;
+    width: 20%;
     padding: 20px;
+    align-items: center:
     justify-content: center;
     background-color: lightgrey;
   ${mobile({ width: "100%" })}
