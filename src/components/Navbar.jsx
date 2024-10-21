@@ -1,8 +1,9 @@
+import Logo from "../components/logo/logo192.png";
 import React from "react";
 import styled from "styled-components";
-import Logo from "../components/logo/logo192.png";
 import { Badge } from "@material-ui/core";
-import { ShoppingCartOutlined, Search } from "@material-ui/icons";
+import { Search, ShoppingCartOutlined } from "@material-ui/icons";
+import { Link } from "react-router-dom";
 import { mobile } from "../responsive";
 
 const Container = styled.div`
@@ -38,7 +39,7 @@ const SearchContainer = styled.div`
   align-items: center;
   margin-left: 25px;
   padding: 5px;
-  bakcground-color: lightgray;
+  background-color: lightgrey;
   ${mobile({ marginLeft: "20px" })}
 `;
 const Input = styled.input`
@@ -78,10 +79,10 @@ const Navbar = () => {
           </SearchContainer>
         </Left>
         <Center>
-          <img src={Logo} className="App-logo" alt="Logo" width={45} />
+          <img src={Logo} className="App-logo" alt="Logo" width={45} Link to="/" />
         </Center>
         <Right>
-          <MenuItem>Register</MenuItem>
+          <MenuItem Link to="/register">Register</MenuItem>
           <MenuItem>Sign In</MenuItem>
           <MenuItem>
             <Badge badgeContent={4} color="white">

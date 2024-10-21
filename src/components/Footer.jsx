@@ -1,3 +1,7 @@
+import Logo from "../components/logo/logo192.png";
+import styled from "styled-components";
+import { mobile } from "../responsive";
+
 import {
   Facebook,
   Instagram,
@@ -8,9 +12,6 @@ import {
   Room,
   Twitter,
 } from "@material-ui/icons";
-import { mobile } from "../responsive";
-import styled from "styled-components";
-import Logo from "../components/logo/logo192.png";
 
 const Container = styled.div`
   display: flex;
@@ -115,7 +116,7 @@ const Footer = () => {
           <ListItem>Home</ListItem>
           <ListItem>Cart</ListItem>
           <ListItem>Birthday Gift</ListItem>
-          <ListItem>Anniversery Gift</ListItem>
+          <ListItem>Anniversary Gift</ListItem>
           <ListItem>Accessories</ListItem>
           <ListItem>My account</ListItem>
           <ListItem>Order Tracking</ListItem>
@@ -127,11 +128,11 @@ const Footer = () => {
         <Title>Contact</Title>
         <ContactItem>
           <Room style={{ marginRight: "10px" }} />
-          35, Kalptaru Society, Ahmedabad 380052
+          Ahmedabad: 382424
         </ContactItem>
         <ContactItem>
           <Phone style={{ marginRight: "10px" }} />
-          +91 99999 77777
+          +91 7045472595
         </ContactItem>
         <ContactItem>
           <MailOutline style={{ marginRight: "10px" }} />
